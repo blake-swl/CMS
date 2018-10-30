@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './nav.scss';
-import { slide as Menu } from 'react-burger-menu';
+import { elastic as Menu } from 'react-burger-menu';
+
+// Icons
+import { Icon } from 'react-icons-kit';
+import { home } from 'react-icons-kit/icomoon/home';
+
 
 export default class Navigation extends Component {
   // showSettings(e) {
@@ -13,7 +18,8 @@ export default class Navigation extends Component {
         <nav id="nav" className="nav">
           <ul>
             <li>
-              <a href="#" className="bm-item-list">Home</a>
+              <a href="#" className="bm-item-list">
+                <Icon icon={home} size={20}/>{' '}Home</a>
             </li>
             <li>
               <a href="#" className="bm-item-list">Table of Contents</a>

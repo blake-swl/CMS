@@ -9,55 +9,58 @@
   width: 100%;
   height: auto;
 }
-.background {
-  background: url("https://d2genp9fhbycca.cloudfront.net/hollywood.jpg") 50% 30% no-repeat fixed;
+.title {
+  background: url('../../../dist/crt.jpg') 50% 90% no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-}
-.background-layer {
-  background-color: rgba(0,0,0, 0.4);
-  // background: rgba
-}
-.foreground {
-  outline: none;
-  color: white;
-  font-weight: bold;
-  background: $ink;
-  // border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  height: 80%;
-  padding: 20px;
-  text-align: center;
-}
-//   .title-layer {
-//     background: rgba(76,42,133, 0.5);
-//     width: 100%;
-//     height: 45vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     // padding: 30% 20%;
+  height: 45vh;
 
-//     h1  {
-//       font-size: 50px;
-//       color: $nyanza;
-//       text-shadow: -1px 1px 5px $boyblue;
-//     }
-//   }
-// }
-// .description {
-//   width: 75%;
+  .title-layer {
+    background: rgba(76,42,133, 0.3);
+    // background: rgba(221,251,210, 0.5);
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    h1  {
+      font-size: 50px;
+      color: $nyanza;
+      // color: $sviolet;
+      text-shadow: -1px 1px 5px $boyblue;
+    }
+  }
+}
 
-//   .heading {
-//     padding-top: 5%;
-//     font-size: 20px;
+.description {
+  width: 75%;
+
+.heading {
+  padding-top: 5%;
+  font-size: 20px;
+  } 
+}
+// .foreground {
+//   outline: none;
+//   color: white;
+//   // font-weight: bold;
+//   // background: $ink;
+//   // border: 3px solid #f1f1f1;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   z-index: 2;
+//   width: 80%;
+//   height: 80%;
+//   padding: 20px;
+//   text-align: center;
+  
+//   h1 {
+//     font-family: 'horizon';
+//     font-size: 50px;
+//     font-weight: bold;
+    
 //   }
 // }
