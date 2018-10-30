@@ -23,6 +23,7 @@
     "pg": "^7.6.0",
     "pg-hstore": "^2.3.2",
     "react": "^16.6.0",
+    "react-burger-menu": "^2.5.4",
     "react-dom": "^16.6.0",
     "react-router": "^4.3.1",
     "sass-loader": "^7.1.0",

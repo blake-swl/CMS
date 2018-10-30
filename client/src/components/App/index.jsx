@@ -3,15 +3,17 @@ import './reset.scss';
 
 // Components
 import Navigation from '../Navigation/';
-import TableOfContents from '../TableOfContents/';
+import Home from '../Home/';
 import Page from '../Page/';
+import Login from '../Login/';
 
 const App = () => {
   return(
     <div>
       <Navigation />
-      <TableOfContents />
-      <Page />
+      <Home />
+      {/* <Login />
+      <Page /> */}
     </div>
   )
 }
