@@ -97,17 +97,6 @@ eval("module.exports = \"data:font/ttf;base64,AAEAAAASAQAABAAgRFNJRwAAAAEAAJB8AA
 
 /***/ }),
 
-/***/ "./client/dist/crt.jpg":
-/*!*****************************!*\
-  !*** ./client/dist/crt.jpg ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("module.exports = __webpack_require__.p + \"3f4fbe58ffbdb08bd3b8f3315dd2dacc.jpg\";\n\n//# sourceURL=webpack:///./client/dist/crt.jpg?");
-
-/***/ }),
-
 /***/ "./client/src/components/App/index.jsx":
 /*!*********************************************!*\
   !*** ./client/src/components/App/index.jsx ***!
@@ -253,7 +242,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../node_module
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var escape = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/url/escape.js */ \"./node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Roboto);\", \"\"]);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Montserrat);\", \"\"]);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do);\", \"\"]);\n\n// module\nexports.push([module.i, \"/* Fonts */\\n/* Roboto */\\n/* Montserrat */\\n/* Cursive font */\\n/* Horizon */\\n@font-face {\\n  font-family: 'horizon';\\n  src: url(\" + escape(__webpack_require__(/*! ../../../dist/Horizon/Horizon-Regular.ttf */ \"./client/dist/Horizon/Horizon-Regular.ttf\")) + \"); }\\n\\n/* Colors */\\n/* Alternate Scheme */\\n/* Modern Bright */\\nbody {\\n  font-family: \\\"Roboto\\\", sans-serif; }\\n\\n#home {\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center;\\n  width: 100%;\\n  height: auto; }\\n\\n.title {\\n  background: url(\" + escape(__webpack_require__(/*! ../../../dist/crt.jpg */ \"./client/dist/crt.jpg\")) + \") 50% 90% no-repeat;\\n  background-size: cover;\\n  width: 100%;\\n  height: 45vh; }\\n  .title .title-layer {\\n    background: rgba(76, 42, 133, 0.3);\\n    width: 100%;\\n    height: 45vh;\\n    display: flex;\\n    justify-content: center;\\n    align-items: center; }\\n    .title .title-layer h1 {\\n      font-size: 50px;\\n      color: #DDFBD2;\\n      text-shadow: -1px 1px 5px #6B7FD7; }\\n\\n.description {\\n  width: 75%; }\\n  .description .heading {\\n    padding-top: 5%;\\n    font-size: 20px; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./client/src/components/Home/home.scss?./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js");
+eval("var escape = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/url/escape.js */ \"./node_modules/css-loader/lib/url/escape.js\");\nexports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Roboto);\", \"\"]);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Montserrat);\", \"\"]);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do);\", \"\"]);\n\n// module\nexports.push([module.i, \"/* Fonts */\\n/* Roboto */\\n/* Montserrat */\\n/* Cursive font */\\n/* Horizon */\\n@font-face {\\n  font-family: 'horizon';\\n  src: url(\" + escape(__webpack_require__(/*! ../../../dist/Horizon/Horizon-Regular.ttf */ \"./client/dist/Horizon/Horizon-Regular.ttf\")) + \"); }\\n\\n/* Colors */\\n/* Alternate Scheme */\\n/* Modern Bright */\\nbody {\\n  font-family: \\\"Roboto\\\", sans-serif; }\\n\\n#home {\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center;\\n  width: 100%;\\n  height: 100vh;\\n  background: url(\\\"https://d2genp9fhbycca.cloudfront.net/hollywood.jpg\\\") 50% 30% no-repeat fixed;\\n  background-size: cover; }\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./client/src/components/Home/home.scss?./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js");
 
 /***/ }),
 
