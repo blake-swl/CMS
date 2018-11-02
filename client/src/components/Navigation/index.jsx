@@ -5,41 +5,73 @@ import { elastic as Menu } from 'react-burger-menu';
 // Icons
 import { Icon } from 'react-icons-kit';
 import { home } from 'react-icons-kit/icomoon/home';
+import {user} from 'react-icons-kit/icomoon/user';
+import {list2} from 'react-icons-kit/icomoon/list2';
+
 
 
 export default class Navigation extends Component {
-  // showSettings(e) {
-  //   e.preventDefault();
-  // }
+  constructor() {
+    super();
+
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  // Sticky Nav
+  handleScroll() {  
+    const navbar = document.getElementById("nav");
+
+    const sticky = navbar.offsetTop;
+
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
 
   render() {
     return(
-      <Menu right>
-        <nav id="nav" className="nav">
+      <div >
+        <div id="nav">
           <ul>
-            <li>
-              <a href="#" className="bm-item-list">
-                <Icon icon={home} size={20}/>{' '}Home</a>
-            </li>
-            <li>
-              <a href="#" className="bm-item-list">Table of Contents</a>
-              <ol>
-                <li><a href="#" className="bm-item-list">General Questions</a></li>
-                <li><a href="#" className="bm-item-list">HTML Questions</a></li>
-                <li><a href="#" className="bm-item-list">CSS Questions</a></li>
-                <li><a href="#" className="bm-item-list">JS Questions</a></li>
-                <li><a href="#" className="bm-item-list">Accessibility Questions</a></li>
-                <li><a href="#" className="bm-item-list">Testing Questions</a></li>
-                <li><a href="#" className="bm-item-list">Performance Questions</a></li>
-                <li><a href="#" className="bm-item-list">Network Questions</a></li>
-                <li><a href="#" className="bm-item-list">Coding Questions</a></li>
-                <li><a href="#" className="bm-item-list">Fun Questions</a></li>
-              </ol>
-            </li>
-            <li><a href="#login" className="bm-item-list">Login</a></li>
+            <li className="logo"><a href="https://blakeswl.me">BL</a></li>
           </ul>
-        </nav>
-      </Menu>
+        </div>
+
+        <Menu right id="burger" >
+          <nav className="nav" id="page-wrap">
+            <ul>
+              <li>
+                <a href="#" className="bm-item-list">
+                  <Icon icon={home} size={20} className="icon"/>{' '}Home</a>
+              </li>
+              <li>
+                <a href="#" className="bm-item-list">
+                  <Icon icon={list2} size={20} className="icon" />{' '}
+                  Table of Contents</a>
+                <ol>
+                  <li><a href="#" className="bm-item-list indent">General Questions</a></li>
+                  <li><a href="#" className="bm-item-list indent">HTML Questions</a></li>
+                  <li><a href="#" className="bm-item-list indent">CSS Questions</a></li>
+                  <li><a href="#" className="bm-item-list indent">JS Questions</a></li>
+                  <li><a href="#" className="bm-item-list indent">Accessibility Questions</a></li>
+                  <li><a href="#" className="bm-item-list indent">Testing Questions</a></li>
+                  <li><a href="#" className="bm-item-list indent">Performance Questions</a></li>
+                  <li><a href="#" className="bm-item-list indent">Network Questions</a></li>
+                  <li><a href="#" className="bm-item-list indent">Coding Questions</a></li>
+                  <li><a href="#" className="bm-item-list indent">Fun Questions</a></li>
+                </ol>
+              </li>
+              <li><a href="#login" className="bm-item-list">
+                <Icon icon={user} size={20} className="icon" />{' '}Login</a>
+              </li>
+            </ul>
+          </nav>
+        </Menu>
+      </div>
     )
   }
 };

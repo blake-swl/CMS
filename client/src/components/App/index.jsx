@@ -11,7 +11,7 @@ const App = () => {
   return(
     <div>
       <Navigation />
-      <Home />
+      <Home/>
       {/* <Login />
       <Page /> */}
     </div>

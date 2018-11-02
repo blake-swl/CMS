@@ -1,125 +1,178 @@
 @import '../App/global.scss';
 
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  right: 36px;
-  top: 36px;
-}
-
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: $nyanza;
-  box-shadow: -1px 1px 5px $boyblue;
-}
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #bdc3c7;
-}
-
-/* General sidebar styles */
-.bm-menu {
-  background: $nyanza;
-  padding-top: 10%;
-  // padding: 2.5em 1.5em 0;
-  font-size: 20px;
-}
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: $nyanza;
-}
-
-/* Wrapper for item list */
-.bm-item-list {
-  text-decoration: none;
-  color: $sviolet;
-  padding: 0.8em;
-}
-
-/* Individual item */
-.bm-item {
-  display: inline-block;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-}
 
 // @media only screen and (max-width: 768px) {
-  // #nav {
-  //   * {
-  //     text-decoration: none;
-  //     font-family: $roboto;
 
-  //   }
-  // }
-  // .nav ul {
-  //   *zoom:1;
-  //   list-style:none;
-  //   margin:0;
-  //   padding:0;
-  //   background: $lapis;
-  // }
-  // .nav ul:before,.nav ul:after {
-  //   content:"";
-  //   display:table;
-  // }
-  // .nav ul:after {
-  //   clear:both;
-  // }
-  // .nav ul > li {
-  //   float:left;
-  //   position:relative;
-  // }
-  // .nav a {
-  //   display:block;
-  //   padding:10px 20px;
-  //   line-height:1.2em;
-  //   color:#fff;
-  //   border-left:1px solid $black;
-  // }
-  // .nav a:hover {
-  //   text-decoration:none;
-  //   background: $ink;
-  // }
-  // .nav li ul {
-  //   background:$lapis;
-  // }
-  // .nav li ul li {
-  //   width:210px;
-  // }
-  // .nav li ul a {
-  //   border:none;
-  // }
-  // .nav li ul a:hover {
-  //   background:rgba(0,0,0,0.2);
-  // }
-  // .nav li ul {
-  //   position:absolute;
-  //   left:0;
-  //   top:36px;
-  //   z-index:1;
-  // }
-  // .nav li ul li {
-  //   overflow:hidden;
-  //   height:0;
-  //   -webkit-transition:height 200ms ease-in;
-  //   -moz-transition:height 200ms ease-in;
-  //   -o-transition:height 200ms ease-in;
-  //   transition:height 200ms ease-in;
-  // }
-  // .nav ul > li:hover ul li {
-  //   height:36px;
-  // }
+  #nav {
+    background: $white;
+    border-bottom: 2px double #DDDAD4;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 5;
+    // position: sticky;
+    // position: -webkit-sticky;
+    // top: 1px;
+  }
+
+  .sticky {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+  }
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 18px;
+    top: 18px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #208489;
+    // box-shadow: -1px 1px 5px $boyblue;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: white;
+    padding: 10% 0 10% 0;
+    font-size: 20px;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: white;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    text-decoration: none;
+    color: #484848;
+    padding: 1em;
+  }
+  .bm-item-list:hover {
+    color: #208489;
+  }
+
+  /* Individual item */
+  .bm-item {
+    line-height: 2;
+    display: inline-block;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .indent {
+    margin-left: 20px;
+  }
+  .icon {
+    position: relative;
+    top: -2px;
+  }
+  .logo a {
+    font-family: 'plume';
+    font-size: 60px;
+    color: $green;
+    // padding-left: 10%;
+    position: fixed;
+    left: 18px;
+    top: 9px;
+    // right: -200;
+    // text-align: center;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $grey;
+  }
+// }
+
+
+// #nav {
+//   * {
+//     text-decoration: none;
+//     font-family: $roboto;
+
+//   }
+// }
+// #burger {
+//   display: none;
+// }
+// .nav ul {
+//   *zoom:1;
+//   list-style:none;
+//   margin:0;
+//   padding:0;
+//   // background: $lapis;
+// }
+// .nav ul:before,.nav ul:after {
+//   content:"";
+//   display:table;
+// }
+// .nav ul:after {
+//   clear:both;
+// }
+// .nav ul > li {
+//   float:left;
+//   position:relative;
+// }
+// .nav a {
+//   display:block;
+//   padding:10px 20px;
+//   line-height:1.2em;
+//   color:#fff;
+//   // border-left:1px solid $black;
+// }
+// .nav a:hover {
+//   text-decoration:none;
+//   background: $ink;
+// }
+// .nav li ul {
+//   // background:$lapis;
+// }
+// .nav li ul li {
+//   width:210px;
+// }
+// .nav li ul a {
+//   border:none;
+// }
+// .nav li ul a:hover {
+//   background:rgba(0,0,0,0.2);
+// }
+// .nav li ul {
+//   position:absolute;
+//   left:0;
+//   top:36px;
+//   z-index:1;
+// }
+// .nav li ul li {
+//   overflow:hidden;
+//   height:0;
+//   -webkit-transition:height 200ms ease-in;
+//   -moz-transition:height 200ms ease-in;
+//   -o-transition:height 200ms ease-in;
+//   transition:height 200ms ease-in;
+// }
+// .nav ul > li:hover ul li {
+//   height:36px;
 // }

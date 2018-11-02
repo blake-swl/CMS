@@ -19,6 +19,19 @@ $nothing: 'Nothing You Could Do', cursive;
   src: url('../../../dist/Horizon/Horizon-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'plume';
+  src: url('../../../dist/Plume/Plume-free-brush-font.otf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+$lato: 'Lato', sans-serif;
+
+/* Modern */ 
+$white: white;
+$green: #208489;
+$grey: #484848;
+
 /* Colors */
 $darkTerra: #D05353;
 $yankeesBlue: #2E5060;
@@ -44,5 +57,6 @@ $diamond: #BCEDF6;
 $nyanza: #DDFBD2;
 
 body {
-  font-family: $roboto;
+  font-family: $lato;
+  color: #484848;
 }

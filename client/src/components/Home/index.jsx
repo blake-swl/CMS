@@ -6,7 +6,7 @@ const Home = () => {
     <div id="home">
       <div className="title">
         <div className="title-layer">
-          <h1>WELCOME TO MY BLOG</h1>
+          <h1>Frontend Interview Questions & Solutions</h1>
         </div>
       </div>
       <div className="description">
