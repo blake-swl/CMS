@@ -7,23 +7,18 @@
 > This project is to serve as a comprehensive full-stack application to practice my expertise on web-development skills and knowledge, from initial project inception, prototyping, wireframing, testing, to fully realized product delivery. With this project, my goals are to adhere to the agile scrum development framework, focusing on MVP model of product development by setting timely deadlines and feature implementation and using web dev best practices. Through the use of the platform that I build, I will also be journaling my experiences, my successess and my roadblocks. The goal of this project is to practice the full breath and depth of the web dev experience.
 
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
   > Blake's Blog
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
   > A platform for hosting content for bloggers and users without needing to touch code.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good. 
   > As a web developer, we often create static or semi static webpages that need to be edited or altered using code to make any changes to the content. Drawing inspiration from how blogs and product listing pages work, my goal is to create a content management system (CMS) where users can publish content without ever needing to write code. This is product looks to serve as a publishing platform for non-technical users. 
 
 ## Problem ##
-  > Describe the problem your product solves.
   > Users need to have web developing experience to create content.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
   > By creating a CMS platform, users are able to create content without the need of coding themselves. The platform is provided by this product.
 
 ## Tech Stack ##
