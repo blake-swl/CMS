@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './login.scss';
 
-// import fontAwesome from "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
-// Icons
 import { Icon } from 'react-icons-kit';
 import {user} from 'react-icons-kit/icomoon/user';
 
@@ -57,24 +55,23 @@ export default class Login extends Component {
 
     return (
       <div id="login">
-        {/* <div className="login-layer"> */}
-          <form className="mailbox" >
-            <h1>Sign In</h1>
-            <textarea 
-              className="fontAwesome"
-              placeholder="&#xf007; Username"
-              name="username"
-              onChange={this.onChange}>
-            </textarea>
-            <textarea 
-              className="input"
-              placeholder="Password"
-              name="password" 
-              onChange={this.onChange}>
-            </textarea>
-            <button>SIGN IN</button>
-          </form>
-        {/* </div> */}
+        <form className="mailbox" data-aos="fade-left">
+          <h1>Sign In</h1>
+          <input 
+            className="fontAwesome"
+            placeholder="&#xf007; Username"
+            name="username"
+            onChange={this.onChange}>
+          </input>
+          <input 
+            className="input"
+            placeholder="Password"
+            name="password" 
+            type="password"
+            onChange={this.onChange}>
+          </input>
+          <button>SIGN IN</button>
+        </form>
       </div>
     )
   }

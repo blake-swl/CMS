@@ -1,76 +1,76 @@
 @import '../App/global.scss';
 
 #login {
-  // padding: 8vh 0;
   width: 100%;
-  // background: url('../../../dist/beach.jpg') 50% 50% no-repeat;
   background: url('../../../dist/beach1.jpg') 50% 50% no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 92vh;
 
   form {
     display: flex;
-    // background: linear-gradient(#6B7FD7, #A538A5);
     background: white;
-    // background: $passiveGrey;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     border-radius: 3%;
-    padding: 2.5% 1%;
+    padding: 4% 3%;
     box-shadow: 1px 1px 10px $grey;
   }
   h1 {
-    padding-bottom: 20%;
-    font-size: 20px;
+    padding-bottom: 10%;
+    font-size: 30px;
     font-weight: bold;
     color: $grey;
-    // color: white;
   }
   
-  textarea {
+  input {
     border: none;
     border-radius: 500px;
-    box-shadow: 1px 5px 10px $passiveGrey;
-    line-height: .7;
+    box-shadow: 1px 8px 10px $passiveGrey, -1px -1px 10px $passiveGrey;
+    line-height: 1.5;
     padding-left: 7px;
-    // border-bottom: 0.5px solid $grey;
+    font-size: 16px;
+    font-weight: bold;
     margin: 8px 0;
     resize: none;
     outline: none;
     background: none;
-    width: 20vh;
+    height: 5vh;
+    width: 15vw;
     color: $grey;
-    // color: white;
+    transition: .2s ease-in;
+  }
+  input:focus {
+    box-shadow: 1px 8px 15px #D2D3D5, -1px -1px 15px #D2D3D5;
+    transition: .2s ease-in;
   }
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: $grey;
   }
   
   button {
-    margin-top: 10%;
+    margin-top: 8%;
     background: #a5cef0;
     color: white;
     border: none;
-    box-shadow: 1px 8px 10px $passiveGrey;
+    box-shadow: 1px 15px 15px $passiveGrey;
     font-weight: bold;
     border-radius: 500px;
-    width: 80px;
-    height: 30px;
+    width: 10vw;
+    height: 40px;
     outline: none;
     cursor: pointer;
     margin-bottom: 30%;
+    transition: .2s ease-in;
+
+  }
+  button:hover {
+    background: $ink;
+    box-shadow: 1px 15px 15px #D2D3D5;
+    transition: .2s ease-in;
   }
 }
-.fontAwesome {
-  font-family: Helvetica, 'FontAwesome', sans-serif;
-}
-
-
-// }
-
 
