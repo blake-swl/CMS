@@ -6,14 +6,14 @@
     flex-direction: column;
     // justify-content: center;
     align-items: center;
-    // width: 100%;
-    // height: 200vh;
-    // background: url("https://d2genp9fhbycca.cloudfront.net/hollywood.jpg") 50% 30% no-repeat fixed;
-    // background-size: cover;
+    width: 100%;
+    height: 100vh;
+    // background: url("https://d2genp9fhbycca.cloudfront.net/hollywood.jpg") 50% 50% no-repeat fixed;
+    background-size: cover;
+    background: url('../../../dist/ux.jpg') 50% 50% no-repeat;
 
   }
   .title {
-    background: url('../../../dist/ux.jpg') 50% 50% no-repeat;
     background-size: cover;
     width: 80%;
     height: 45vh;

@@ -4,7 +4,7 @@
   > Content Management System, A Blog by Blake Lee
 
 ## Opening Thoughts ##
-> This project is to serve as a comprehensive full-stack application to practice my expertise on web-development skills and knowledge, from initial project inception, prototyping, wireframing, testing, to fully realized product delivery. With this project, my goals are to adhere to the agile scrum development framework, focusing on MVP model of product development by setting timely deadlines and feature implementation and using web dev best practices. Through the use of the platform that I build, I will also be journaling my experiences, my successess and my roadblocks. The goal of this project is to practice the full breath and depth of the web dev experience.
+> This project is to serve as a comprehensive full-stack application to exercise my expertise of web-development skills and knowledge, from initial project inception, prototyping, wireframing, testing, to fully realized product delivery. With this project, my goals are to adhere to the agile scrum development framework, focusing on MVP model of product development by setting timely deadlines and feature implementation, using web dev best practices. Through the use of the platform that I build, I will also be journaling my experiences, my successess and my roadblocks. The goal of this project is to practice the full breath and depth of the web dev experience.
 
 ## Heading ##
   > Blake's Blog

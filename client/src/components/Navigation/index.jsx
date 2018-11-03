@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 // Icons
 import { Icon } from 'react-icons-kit';
-import { home } from 'react-icons-kit/icomoon/home';
 import {user} from 'react-icons-kit/icomoon/user';
+import { home } from 'react-icons-kit/icomoon/home';
 import {list2} from 'react-icons-kit/icomoon/list2';
 
 

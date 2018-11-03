@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './login.scss';
 
+// import fontAwesome from "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+// Icons
+import { Icon } from 'react-icons-kit';
+import {user} from 'react-icons-kit/icomoon/user';
+
 export default class Login extends Component {
   constructor() {
     super();
@@ -56,8 +61,8 @@ export default class Login extends Component {
           <form className="mailbox" >
             <h1>Sign In</h1>
             <textarea 
-              className="input"
-              placeholder="Username"
+              className="fontAwesome"
+              placeholder="&#xf007; Username"
               name="username"
               onChange={this.onChange}>
             </textarea>
@@ -67,7 +72,7 @@ export default class Login extends Component {
               name="password" 
               onChange={this.onChange}>
             </textarea>
-            <button>Login</button>
+            <button>SIGN IN</button>
           </form>
         {/* </div> */}
       </div>

@@ -35,7 +35,8 @@
 
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: #208489;
+    // background: #1C5D99;
+    background: $grey;
     // box-shadow: -1px 1px 5px $boyblue;
   }
 
@@ -69,7 +70,7 @@
     padding: 1em;
   }
   .bm-item-list:hover {
-    color: #208489;
+    color: #a5cef0;
   }
 
   /* Individual item */
@@ -93,7 +94,7 @@
   .logo a {
     font-family: 'plume';
     font-size: 60px;
-    color: $green;
+    color: $grey;
     // padding-left: 10%;
     position: fixed;
     left: 18px;

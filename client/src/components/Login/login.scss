@@ -21,8 +21,8 @@
     // justify-content: center;
     align-items: center;
     border-radius: 3%;
-    padding: 5% 1%;
-    box-shadow: 1px 5px 10px $grey;
+    padding: 2.5% 1%;
+    box-shadow: 1px 1px 10px $grey;
   }
   h1 {
     padding-bottom: 20%;
@@ -37,7 +37,7 @@
     border-radius: 500px;
     box-shadow: 1px 5px 10px $passiveGrey;
     line-height: .7;
-    // padding: 5px;
+    padding-left: 7px;
     // border-bottom: 0.5px solid $grey;
     margin: 8px 0;
     resize: none;
@@ -52,8 +52,8 @@
   }
   
   button {
-    margin-top: 20%;
-    background: #bcd6eb;
+    margin-top: 10%;
+    background: #a5cef0;
     color: white;
     border: none;
     box-shadow: 1px 8px 10px $passiveGrey;
@@ -63,7 +63,11 @@
     height: 30px;
     outline: none;
     cursor: pointer;
+    margin-bottom: 30%;
   }
+}
+.fontAwesome {
+  font-family: Helvetica, 'FontAwesome', sans-serif;
 }
 
 
