@@ -52,22 +52,24 @@ export default class Login extends Component {
 
     return (
       <div id="login">
-        <h1>Login</h1>
-        <form className="mailbox" >
-          <textarea 
-            className="input"
-            placeholder="userID"
-            name="username"
-            onChange={this.onChange}>
-          </textarea>
-          <textarea 
-            className="input"
-            placeholder="password"
-            name="password" 
-            onChange={this.onChange}>
-          </textarea>
-          <button>Submit</button>
-        </form>
+        {/* <div className="login-layer"> */}
+          <form className="mailbox" >
+            <h1>Sign In</h1>
+            <textarea 
+              className="input"
+              placeholder="Username"
+              name="username"
+              onChange={this.onChange}>
+            </textarea>
+            <textarea 
+              className="input"
+              placeholder="Password"
+              name="password" 
+              onChange={this.onChange}>
+            </textarea>
+            <button>Login</button>
+          </form>
+        {/* </div> */}
       </div>
     )
   }

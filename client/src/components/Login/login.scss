@@ -1,31 +1,72 @@
 @import '../App/global.scss';
 
 #login {
-  padding-top: -8vh;
+  // padding: 8vh 0;
   width: 100%;
-  height: 100vh;
+  // background: url('../../../dist/beach.jpg') 50% 50% no-repeat;
+  background: url('../../../dist/beach1.jpg') 50% 50% no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
-
-  h1 {
-    font-size: 40px;
-    padding: 5% 0;
-  }
+  justify-content: center;
+  height: 100vh;
 
   form {
     display: flex;
+    // background: linear-gradient(#6B7FD7, #A538A5);
+    background: white;
+    // background: $passiveGrey;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
-    border: 2px solid $grey;
-    padding: 5% 10%;
+    border-radius: 3%;
+    padding: 5% 1%;
+    box-shadow: 1px 5px 10px $grey;
   }
-
+  h1 {
+    padding-bottom: 20%;
+    font-size: 20px;
+    font-weight: bold;
+    color: $grey;
+    // color: white;
+  }
+  
   textarea {
-
+    border: none;
+    border-radius: 500px;
+    box-shadow: 1px 5px 10px $passiveGrey;
+    line-height: .7;
+    // padding: 5px;
+    // border-bottom: 0.5px solid $grey;
+    margin: 8px 0;
+    resize: none;
+    outline: none;
+    background: none;
+    width: 20vh;
+    color: $grey;
+    // color: white;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $grey;
+  }
+  
+  button {
+    margin-top: 20%;
+    background: #bcd6eb;
+    color: white;
+    border: none;
+    box-shadow: 1px 8px 10px $passiveGrey;
+    font-weight: bold;
+    border-radius: 500px;
+    width: 80px;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
   }
 }
+
+
+// }
 
 
