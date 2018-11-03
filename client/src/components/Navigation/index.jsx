@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './nav.scss';
 import { elastic as Menu } from 'react-burger-menu';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 
 // Icons
 import { Icon } from 'react-icons-kit';
@@ -31,7 +33,7 @@ export default class Navigation extends Component {
       navbar.classList.remove("sticky");
     }
   }
-
+  
   render() {
     return(
       <div >
@@ -45,8 +47,8 @@ export default class Navigation extends Component {
           <nav className="nav" id="page-wrap">
             <ul>
               <li>
-                <a href="#" className="bm-item-list">
-                  <Icon icon={home} size={20} className="icon"/>{' '}Home</a>
+                <Link to="/" className="bm-item-list">
+                  <Icon icon={home} size={20} className="icon"/>{' '}Home</Link>
               </li>
               <li>
                 <a href="#" className="bm-item-list">
@@ -65,16 +67,16 @@ export default class Navigation extends Component {
                   <li><a href="#" className="bm-item-list indent">Fun Questions</a></li>
                 </ol>
               </li>
-              <li><a href="#login" className="bm-item-list">
-                <Icon icon={user} size={20} className="icon" />{' '}Login</a>
+              <li><Link to="/login" className="bm-item-list">
+                <Icon icon={user} size={20} className="icon" />{' '}Login</Link>
               </li>
             </ul>
           </nav>
         </Menu>
       </div>
-    )
-  }
-};
+      )   
+    }
+  };
 
       {/* <ul>
 
