@@ -4,7 +4,7 @@ import parser from 'body-parser';
 import db from '../db/index'
 
 const app = express();
-const PORT = process.env.PORT || 2019;
+const PORT = process.env.PORT || 2020;
 
 app.use(parser.urlencoded({extended: true}));
 app.use(parser.json());
