@@ -1,6 +1,9 @@
 import React from 'react';
 import './reset.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { elastic as Menu } from 'react-burger-menu';
+// import '../Navigation/nav.scss';
+
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,7 +12,7 @@ import 'aos/dist/aos.css';
 import Navigation from '../Navigation/';
 import Home from '../Home/';
 import Page from '../Page/';
-import Login from '../Login/';
+import Login from '../Login/index';
 
 
 AOS.init({
@@ -35,15 +38,31 @@ AOS.init({
 
 });
 
+// const App = () => {
+//   <div id="outer-container">
+//     test
+//     asdfdsafdasfsdaf
+//     {/* <Menu left id="burger" pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }> */}
+//       <Login id="page-wrap"/>
+//       {/* <Home /> */}
+
+//     {/* </Menu> */}
+
+//   </div>
+// }
+
 const App = () => (
-  <div>
-    <Navigation />
-    <Switch>
+  <div id="outer-container">
+    {/* <Menu left id="burger" pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }> */}
+      <Navigation />
+    {/* </Menu> */}
+    <Switch id="page-wrap">
       {/* <Route path='/' component={Navigation} /> */}
-      <Route exact path="/" render={Home} />
-      <Route exact path="/page" render={Page} />
-      <Route exact path="/login" render={props => <Login {...props} />} />
+      <Route exact path="/" render={Home} id="page-wrap"/>
+      <Route exact path="/page" render={Page} id="page-wrap"/>
+      <Route exact path="/login" render={props => <Login {...props} />} id="page-wrap"/>
     </Switch>
+
   </div>
 );
 export default App;

@@ -8,15 +8,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 92vh;
+  height: 100vh;
 
   form {
     display: flex;
     background: white;
     flex-direction: column;
     align-items: center;
-    border-radius: 3%;
     padding: 4% 3%;
+    border-radius: 3%;
     box-shadow: 1px 1px 10px $grey;
   }
   h1 {
@@ -29,7 +29,7 @@
   input {
     border: none;
     border-radius: 500px;
-    box-shadow: 1px 8px 10px $passiveGrey, -1px -1px 10px $passiveGrey;
+    box-shadow: 0 8px 10px $passiveGrey, 0 -1px 10px $passiveGrey;
     line-height: 1.5;
     padding-left: 7px;
     font-size: 16px;
@@ -39,12 +39,12 @@
     outline: none;
     background: none;
     height: 5vh;
-    width: 15vw;
+    width: 250px;
     color: $grey;
     transition: .2s ease-in;
   }
   input:focus {
-    box-shadow: 1px 8px 15px #D2D3D5, -1px -1px 15px #D2D3D5;
+    box-shadow: 0 8px 15px #D2D3D5, 0 -1px 15px #D2D3D5;
     transition: .2s ease-in;
   }
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -56,10 +56,10 @@
     background: #a5cef0;
     color: white;
     border: none;
-    box-shadow: 1px 15px 15px $passiveGrey;
+    box-shadow: 0 15px 15px $passiveGrey;
     font-weight: bold;
     border-radius: 500px;
-    width: 10vw;
+    width: 150px;
     height: 40px;
     outline: none;
     cursor: pointer;
@@ -69,7 +69,7 @@
   }
   button:hover {
     background: $ink;
-    box-shadow: 1px 15px 15px #D2D3D5;
+    box-shadow: 0 15px 15px #D2D3D5;
     transition: .2s ease-in;
   }
 }

@@ -2,21 +2,24 @@
 
 
 // @media only screen and (max-width: 768px) {
+  // .nav-container {
+    
+  // }
 
-  #nav {
-    background: white;
-    border-bottom: 2px double #DDDAD4;
-    height: 8vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    z-index: 5;
-    // position: sticky;
-    // position: -webkit-sticky;
-    // top: 1px;
-  }
+  // #nav {
+  //   background: white;
+  //   border-bottom: 2px double #DDDAD4;
+  //   height: 6vh;
+  //   width: 100%;
+  //   display: flex;
+  //   flex-direction: row;
+  //   align-items: center;
+  //   justify-content: flex-start;
+  //   z-index: 5;
+  //   // position: sticky;
+  //   // position: -webkit-sticky;
+  //   // top: 1px;
+  // }
 
   // .sticky {
   //   position: fixed;
@@ -29,14 +32,14 @@
     position: fixed;
     width: 36px;
     height: 30px;
-    right: 18px;
+    left: 18px;
     top: 18px;
   }
 
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
     // background: #1C5D99;
-    background: $grey;
+    background: white;
     // box-shadow: -1px 1px 5px $boyblue;
   }
 
@@ -70,7 +73,7 @@
     padding: 1em;
   }
   .bm-item-list:hover {
-    color: #a5cef0;
+    color: $ink;
   }
 
   /* Individual item */
@@ -93,12 +96,12 @@
   }
   .logo a {
     font-family: 'plume';
-    font-size: 60px;
+    font-size: 40px;
     color: $grey;
     // padding-left: 10%;
     position: fixed;
     left: 18px;
-    top: 9px;
+    top: 2px;
     // right: -200;
     // text-align: center;
     text-decoration: none;

@@ -55,11 +55,11 @@ export default class Login extends Component {
 
     return (
       <div id="login">
-        <form className="mailbox" data-aos="fade-left">
+        <form className="mailbox" data-aos="fade-right">
           <h1>Sign In</h1>
           <input 
             className="fontAwesome"
-            placeholder="&#xf007; Username"
+            placeholder="Username"
             name="username"
             onChange={this.onChange}>
           </input>

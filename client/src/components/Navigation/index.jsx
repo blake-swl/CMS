@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './nav.scss';
 import { elastic as Menu } from 'react-burger-menu';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+
+import Home from '../Home/';
+import Page from '../Page/';
+import Login from '../Login/index';
 
 
 // Icons
@@ -36,14 +40,14 @@ export default class Navigation extends Component {
   
   render() {
     return(
-      <div >
-        <div id="nav">
+      <div className="nav-container">
+        {/* <div id="nav">
           <ul>
             <li className="logo"><a href="https://blakeswl.me">BL</a></li>
           </ul>
-        </div>
+        </div> */}
 
-        <Menu right id="burger" >
+        <Menu left id="burger" pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } >
           <nav className="nav" id="page-wrap">
             <ul>
               <li>
@@ -78,6 +82,12 @@ export default class Navigation extends Component {
     }
   };
 
+//   {/* <Switch id="page-wrap">
+// {/* <Route path='/' component={Navigation} /> */}
+//     <Route exact path="/" render={Home} />
+//     <Route exact path="/page" render={Page} />
+//     <Route exact path="/login" render={props => <Login {...props} />} />
+//   </Switch> */}
       {/* <ul>
 
       </ul>
