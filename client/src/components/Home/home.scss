@@ -1,7 +1,8 @@
+
 @import '../App/global.scss';
 
 // @media only screen and (min-width: 1440px) {
-  #home {
+  .home {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,7 +42,6 @@
       background: #a5cef0;
       color: white;
       border: none;
-      // box-shadow: 0 15px 15px $grey;
       font-weight: bold;
       border-radius: 500px;
       width: 150px;
@@ -54,7 +54,6 @@
     }
     button:hover {
       background: $ink;
-      // box-shadow: 0 15px 15px #D2D3D5;
       transition: .2s ease-in;
     }
   }

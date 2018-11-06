@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import './login.scss';
 
@@ -55,7 +56,7 @@ export default class Login extends Component {
 
     return (
       <div id="login">
-        <form className="mailbox" data-aos="fade-right">
+        <form className="mailbox" data-aos="fade-right" id="page-wrap">
           <h1>Sign In</h1>
           <input 
             className="fontAwesome"

@@ -3,9 +3,6 @@ import './nav.scss';
 import { elastic as Menu } from 'react-burger-menu';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
-import Home from '../Home/';
-import Page from '../Page/';
-import Login from '../Login/index';
 
 
 // Icons
@@ -20,23 +17,23 @@ export default class Navigation extends Component {
   constructor() {
     super();
 
-    this.handleScroll = this.handleScroll.bind(this);
+    // this.handleScroll = this.handleScroll.bind(this);
   }
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    // window.addEventListener('scroll', this.handleScroll);
   }
   // Sticky Nav
-  handleScroll() {  
-    const navbar = document.getElementById("nav");
+  // handleScroll() {  
+  //   const navbar = document.getElementById("nav");
 
-    const sticky = navbar.offsetTop;
+  //   const sticky = navbar.offsetTop;
 
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
+  //   if (window.pageYOffset >= sticky) {
+  //     navbar.classList.add("sticky")
+  //   } else {
+  //     navbar.classList.remove("sticky");
+  //   }
+  // }
   
   render() {
     return(
@@ -47,8 +44,8 @@ export default class Navigation extends Component {
           </ul>
         </div> */}
 
-        <Menu left id="burger" pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } >
-          <nav className="nav" id="page-wrap">
+        <Menu left id="burger" pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+          <nav className="nav">
             <ul>
               <li>
                 <Link to="/" className="bm-item-list">
@@ -81,24 +78,3 @@ export default class Navigation extends Component {
       )   
     }
   };
-
-//   {/* <Switch id="page-wrap">
-// {/* <Route path='/' component={Navigation} /> */}
-//     <Route exact path="/" render={Home} />
-//     <Route exact path="/page" render={Page} />
-//     <Route exact path="/login" render={props => <Login {...props} />} />
-//   </Switch> */}
-      {/* <ul>
-
-      </ul>
-      <a href="#" className="menu-item">General Questions</a>
-      <a href="#" className="menu-item">HTML Questions</a>
-      <a href="#" className="menu-item">CSS Questions</a>
-      <a href="#" className="menu-item">JS Questions</a>
-      <a href="#" className="menu-item">Accessibility Questions</a>
-      <a href="#" className="menu-item">Testing Questions</a>
-      <a href="#" className="menu-item">Performance Questions</a>
-      <a href="#" className="menu-item">Network Questions</a>
-      <a href="#" className="menu-item">Coding Questions</a>
-      <a href="#" className="menu-item">Fun Questions</a> */}
-// export default Navigation;
