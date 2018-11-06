@@ -55,8 +55,8 @@ export default class Login extends Component {
     const { username, password, usernameError, passwordError } = this.state;
 
     return (
-      <div id="login">
-        <form className="mailbox" data-aos="fade-right" id="page-wrap">
+      <div className="login" id="page-wrap">
+        <form className="mailbox" data-aos="fade-right">
           <h1>Sign In</h1>
           <input 
             className="fontAwesome"

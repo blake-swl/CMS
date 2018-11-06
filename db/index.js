@@ -1,12 +1,9 @@
-import Sequelize from 'sequelize';
+// const admin = require('firebase-admin');
 
-export const connection = new Sequelize('fe_solutions', 'seulwoolee', '', {
-  dialect: 'postgres',
-  define: {
-    underscored: true,
-  },
-});
+// var serviceAccount = require('path/to/serviceAccountKey.json');
 
-connection.authenticate()
-  .then( () => console.log('connected to fe_solutions db'))
-  .catch(err => console.error(err))
+// admin.initializeApp({
+//   credential: admin.credential.cert(serviceAccount)
+// });
+
+// var db = admin.firestore();

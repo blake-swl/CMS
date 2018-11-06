@@ -3,30 +3,7 @@
 
 // @media only screen and (max-width: 768px) {
   // .nav-container {
-    
-  // }
 
-  // #nav {
-  //   background: white;
-  //   border-bottom: 2px double #DDDAD4;
-  //   height: 6vh;
-  //   width: 100%;
-  //   display: flex;
-  //   flex-direction: row;
-  //   align-items: center;
-  //   justify-content: flex-start;
-  //   z-index: 5;
-  //   // position: sticky;
-  //   // position: -webkit-sticky;
-  //   // top: 1px;
-  // }
-
-  // .sticky {
-  //   position: fixed;
-  //   z-index: 10;
-  //   top: 0;
-  //   width: 100%;
-  // }
   /* Position and sizing of burger button */
   .bm-burger-button {
     position: fixed;
@@ -40,7 +17,7 @@
   .bm-burger-bars {
     // background: #1C5D99;
     background: white;
-    // box-shadow: -1px 1px 5px $boyblue;
+    box-shadow: 1px 1px 5px black;
   }
 
   /* Position and sizing of clickable cross button */
@@ -58,12 +35,7 @@
   .bm-menu {
     background: white;
     padding: 10% 0 10% 0;
-    font-size: 20px;
-  }
-
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: white;
+    font-size: 18px;
   }
 
   /* Wrapper for item list */
@@ -94,22 +66,7 @@
     position: relative;
     top: -2px;
   }
-  .logo a {
-    font-family: 'plume';
-    font-size: 40px;
-    color: $grey;
-    // padding-left: 10%;
-    position: fixed;
-    left: 18px;
-    top: 2px;
-    // right: -200;
-    // text-align: center;
-    text-decoration: none;
-  }
-  a:hover {
-    color: $grey;
-  }
-// }
+
 
 
 // #nav {

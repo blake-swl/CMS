@@ -1,9 +1,5 @@
 import React from 'react';
-// import './reset.scss';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { elastic as Menu } from 'react-burger-menu';
-
-
+import { Route, Switch } from 'react-router-dom';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -46,7 +42,7 @@ const App = () => (
     <Navigation />
     <Switch>
       <Route exact path="/" render={props => <Home {...props} />}/>
-      <Route exact path="/page" render={Page}/>
+      <Route exact path="/page" render={props => <Page {...props} />}/>
       <Route exact path="/login" render={props => <Login {...props} />}/>
     </Switch>
    </div>
