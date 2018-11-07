@@ -9,6 +9,7 @@ import Navigation from '../Navigation/';
 import Home from '../Home/';
 import Page from '../Page/';
 import Login from '../Login/index';
+import Editor from '../Editor/';
 
 
 
@@ -44,6 +45,8 @@ const App = () => (
       <Route exact path="/" render={props => <Home {...props} />}/>
       <Route exact path="/page" render={props => <Page {...props} />}/>
       <Route exact path="/login" render={props => <Login {...props} />}/>
+      <Route exact path="/editor" render={props => <Editor {...props} />}/>
+
     </Switch>
    </div>
  );

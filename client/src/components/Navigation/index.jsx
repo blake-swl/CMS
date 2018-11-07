@@ -22,30 +22,25 @@ export default class Navigation extends Component {
     super();
     
     this.state = {
-      questions: '',
+      questions: [],
     }
   }
-//   db.collection("cms").get().then((querySnapshot) => {
-//     querySnapshot.forEach((doc) => {
-//         console.log(`${doc.id} => ${doc.data()}`);
-//     });
-// });
 
   componentDidMount() {
-    const docRef = db.collection("cms").doc("Study Guide").collection('Table of Contents');
-
-    docRef.get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-        // console.log(`${doc.id}`);
-        this.setState({
-          questions: doc.id
-        })
+    const docRef =  db.collection("cms/studyguide/toc");
+ 
+     docRef.get().then((querySnapshot) => {
+       querySnapshot.forEach((doc) => {
+        // console.log(doc);
+       this.state.questions.push(doc.id)
       })
     })
-    
+    // console.log(this.state.questions)
   }
 
   render() {
+    let { questions } = this.state;
+
     return(
       <Menu left id="burger" pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
         <nav className="nav">
@@ -59,8 +54,13 @@ export default class Navigation extends Component {
                 <Icon icon={list2} size={18} className="icon" />{' '}
                 Table of Contents</a>
               <ol>
-                <li><Link to="/page" className="bm-item-list indent">{this.state.questions}</Link></li>
+                {questions.map((question) => 
+                <li><Link to="/page" className="bm-item-list indent" key={question}>{question}</Link></li>
+                )}               
               </ol>
+            </li>
+            <li><Link to="/editor" className="bm-item-list">
+              <Icon icon={user} size={18} className="icon" />{' '}Editor</Link>
             </li>
             <li><Link to="/login" className="bm-item-list">
               <Icon icon={user} size={18} className="icon" />{' '}Login</Link>

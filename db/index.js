@@ -8,7 +8,8 @@ firebase.initializeApp({
   databaseURL: "https://blakes-cms.firebaseio.com",
   projectId: "blakes-cms",
   storageBucket: "blakes-cms.appspot.com",
-  messagingSenderId: "114962154442"
+  messagingSenderId: "114962154442",
+  auth: { uid: "8iQits3LGBSI8nMUunAKQj7FQb92", email: "seulwoolee93@gmail.com" }
 });
 
 // Initialize Cloud Firestore through Firebase

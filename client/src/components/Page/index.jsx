@@ -9,11 +9,11 @@ require("firebase/firestore");
 
 export default class Page extends Component {
   render() {
-    db.collection("cms").get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-          console.log(`${doc.id} => ${doc.data()}`);
-      });
-  });
+    // db.collection("cms").get().then((querySnapshot) => {
+    //   querySnapshot.forEach((doc) => {
+    //       console.log(`${doc.id} => ${doc.data()}`);
+    //   });
+  // });
 
     return(
       <div className="page" id="page-wrap">
