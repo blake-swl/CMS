@@ -1,9 +1,24 @@
-// const admin = require('firebase-admin');
+const firebase = require("firebase");
+// Required for side-effects
+require("firebase/firestore");
 
-// var serviceAccount = require('path/to/serviceAccountKey.json');
+firebase.initializeApp({
+  apiKey: "AIzaSyCKRAnKKjKJzlMcPIOsXpgAsqpeM4DLeBc",
+  authDomain: "blakes-cms.firebaseapp.com",
+  databaseURL: "https://blakes-cms.firebaseio.com",
+  projectId: "blakes-cms",
+  storageBucket: "blakes-cms.appspot.com",
+  messagingSenderId: "114962154442"
+});
 
-// admin.initializeApp({
-//   credential: admin.credential.cert(serviceAccount)
-// });
+// Initialize Cloud Firestore through Firebase
+var db = firebase.firestore();
 
-// var db = admin.firestore();
+// Disable deprecated features
+db.settings({
+  timestampsInSnapshots: true
+});
+
+
+
+module.exports = db;

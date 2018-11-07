@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
 import './page.scss';
 import coding from '../../../dist/coding.jpg'
+import db from '../../../../db/index';
+import firebase from 'firebase';
+require("firebase/firestore");
+
+
 
 export default class Page extends Component {
   render() {
+    db.collection("cms").get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+          console.log(`${doc.id} => ${doc.data()}`);
+      });
+  });
+
     return(
       <div className="page" id="page-wrap">
         <div className="page-container">

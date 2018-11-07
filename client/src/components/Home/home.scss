@@ -27,10 +27,12 @@
     h1 {
       font-size: 60px;
       color: white;
-      font-family: "plume"
+      font-family: "plume";
+      text-shadow: 1px 1px $grey;
     }
     p {
-      // font-size: 20px;
+      padding: 2% 0 2% 0;
+      font-size: 20px;
       color: white;
       text-shadow: 1px 1px $ink;
     }
@@ -48,6 +50,7 @@
       cursor: pointer;
       margin-bottom: 30%;
       transition: .2s ease-in;
+      box-shadow: 1px 1px $grey;
   
     }
     button:hover {

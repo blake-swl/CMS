@@ -9,7 +9,7 @@ export default class Home extends Component {
           <div className="title">
             <h1>BLAKE S LEE</h1>
             <p>Software engineer, coffee addict, LeBron James fanatic.</p>
-            <a href="https://blakeswl.me">
+            <a href="https://blakeswl.me" target="_blank">
              <button>VISIT WEBSITE</button>
             </a>
           </div>
