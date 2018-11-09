@@ -53,6 +53,9 @@
     line-height: 2;
     display: inline-block;
   }
+  #list-item {
+    display: inherit;
+  }
 
   /* Styling of overlay */
   .bm-overlay {
