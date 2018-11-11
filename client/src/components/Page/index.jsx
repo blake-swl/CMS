@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './page.scss';
 import coding from '../../../dist/coding.jpg'
-import db from '../../../../db/index';
-import firebase from 'firebase';
-require("firebase/firestore");
+
 
 
 

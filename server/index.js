@@ -1,7 +1,6 @@
 import express from 'express';
 import path from 'path';
 import parser from 'body-parser';
-import db from '../db/index'
 
 const app = express();
 const PORT = process.env.PORT || 2018;

@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './nav.scss';
 import { push as Menu } from 'react-burger-menu';
 import { Link } from "react-router-dom";
-import db from '../../../../db/index';
-// import firebase from 'firebase';
-// require("firebase/firestore");
+
 
 
 
@@ -21,32 +19,10 @@ export default class Navigation extends Component {
   constructor() {
     super();
     
-    // this.state = {
-    //   questions: [],
-    // }
-    // this.handleDropdown.bind(this);
+
   }
 
-  async componentWillMount() {
-    // this.handleDropdown();
-    // console.log(this.state.questions)
-    const docRef =  await db.collection("cms/studyguide/toc");
-    
-    docRef.get().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-        // console.log(doc);
-        this.state.questions.push(doc.id)
-      })
-    })
-    console.log('component will mount')
-  }
-  handleDropdown() {
-    
 
-    const item = document.getElementById('list-item');
-    const display = item.style.display;
-    item.style.display = display == "inherit" ? 'none' : "inherit"
-  }
 
   render() {
     console.log('render()')
@@ -66,9 +42,7 @@ export default class Navigation extends Component {
                 Table of Contents
               </a>
               <ol id="list-item">
-                {questions.map((question) => 
-                <li><Link to="/page" className="bm-item-list indent" key={question}>{question}</Link></li>
-                )}               
+                    
               </ol>
             </li>
             <li><Link to="/editor" className="bm-item-list">
