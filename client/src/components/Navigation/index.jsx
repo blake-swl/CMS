@@ -26,7 +26,7 @@ export default class Navigation extends Component {
 
   render() {
     console.log('render()')
-    let { questions } = this.state;
+    // let { questions } = this.state;
 
     return(
       <Menu left id="burger" pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
@@ -37,10 +37,10 @@ export default class Navigation extends Component {
                 <Icon icon={home} size={18} className="icon"/>{' '}Home</Link>
             </li>
             <li>
-              <a href="#" className="bm-item-list" onClick={this.handleDropdown.bind(this)} id="toc">
+              {/* <a href="#" className="bm-item-list" onClick={this.handleDropdown.bind(this)} id="toc"> */}
                 <Icon icon={list2} size={18} className="icon" />{' '}
                 Table of Contents
-              </a>
+              {/* </a> */}
               <ol id="list-item">
                     
               </ol>
