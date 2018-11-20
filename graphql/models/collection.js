@@ -1,13 +1,14 @@
 export default (sequelize, DataTypes) => {
   const Collection = sequelize.define("collection", {
     name: DataTypes.STRING,
+    subtitle: DataTypes.STRING,
   });
 
   Collection.associate = (models) => {
-    Collection.belongsToMany(models.User, {
-      through: 'channel_member',
-      foreignKey: 'channelId'
+    Collection.belongsTo(models.User, {
+      foreignKey: 'userId'
     });
+    // Collection.belongsToMany(models.)
   }
 
   return Collection;

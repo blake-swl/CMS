@@ -3,7 +3,7 @@ import path from 'path';
 import parser from 'body-parser';
 
 const app = express();
-const PORT = process.env.PORT || 2019;
+export const PORT = process.env.PORT || 2020;
 
 app.use(parser.urlencoded({extended: true}));
 app.use(parser.json());
@@ -17,3 +17,4 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Listening on PORT: ${PORT}`)
 })
+

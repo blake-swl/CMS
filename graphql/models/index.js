@@ -2,11 +2,14 @@ import Sequelize from 'sequelize';
 
 const sequelize = new Sequelize('cms', 'seulwoolee', '', {
   dialect: 'postgres',
+  define: {
+    underscored: true,
+  },
 });
 
 const models = {
   User: sequelize.import('./user'),
-  Article: sequelize.import('./aticle'),
+  Article: sequelize.import('./article'),
   Collection: sequelize.import('./collection'),
 }
 
