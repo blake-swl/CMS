@@ -4,31 +4,52 @@ import "./home.scss";
 import db from '../../../../db/index';
 
 
+let data = [
+  {
+    title: "General Questions",
+    subtitle: "General frontend interview questions",
+    date: '01/01/2017'
+  },
+  {
+    title: "HTML Questions",
+    subtitle: "Common HTML questions & solutions",
+    date: '04/12/2018',
+  },
+  {
+    title: "CSS Questions",
+    subtitle: "Common CSS questions & solutions",
+    date: "10/12/2018"
+  }
+]
+
 export default class Home extends Component {
   constructor() {
     super();
 
     this.state = {
       questions: [],
+      title: '',
+      subtitle: '',
+      date_posted: ''
     }
   }
-  async UNSAFE_componentWillMount() {
-    let { questions } = this.state;
-    // this.handleDropdown();
-    // console.log(this.state.questions)
-    const docRef =  db.collection("cms").doc("studyguide").collection('toc').doc('Accessibility Questions');
-    // const docRef = db.collection("cms/studyguide/toc/Accessibility Questions")
+  // async UNSAFE_componentWillMount() {
+  //   let { questions } = this.state;
+  //   // this.handleDropdown();
+  //   // console.log(this.state.questions)
+  //   const docRef =  db.collection("cms").doc("studyguide").collection('toc').doc('Accessibility Questions');
+  //   // const docRef = db.collection("cms/studyguide/toc/Accessibility Questions")
 
-    docRef.get().then(function(doc) {
-      const object = doc.data();
-      for (var key in object) {
-        questions.push(object[key])
-      }
-      // object.forEach((items) => {
-      //   console.log(items)
-      // })
-        console.log(questions);
-    })
+  //   docRef.get().then(function(doc) {
+  //     const object = doc.data();
+  //     for (var key in object) {
+  //       questions.push(object[key])
+  //     }
+  //     // object.forEach((items) => {
+  //     //   console.log(items)
+  //     // })
+  //       console.log(questions);
+  //   })
     
   //   await docRef.get().then((snapshot) => {
   //     snapshot.forEach((doc) => {
@@ -38,7 +59,7 @@ export default class Home extends Component {
   //   })
   // })
   //   console.log('component will mount')
-  }
+  // }
 
   render() {
     let { questions } = this.state;
@@ -56,9 +77,12 @@ export default class Home extends Component {
         </div>
         <div className="home-right">
           <div>
-            {questions.map((question) => 
+            <h1>{this.state.title}</h1>
+            <h3>{this.state.subtitle}</h3>
+            
+            {/* {questions.map((question) => 
                   <li>{question}</li>
-                  )} 
+                  )}  */}
             {/* {questions} */}
           </div>
         </div>
