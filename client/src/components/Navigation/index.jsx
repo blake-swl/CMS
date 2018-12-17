@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './nav.scss';
 import { push as Menu } from 'react-burger-menu';
 import { Link } from "react-router-dom";
-import db from '../../../../db/index';
+// import db from '../../../../db/index';
 
 
 
@@ -28,17 +28,17 @@ export default class Navigation extends Component {
     }
   }
 
-  componentDidMount() {
-    const docRef =  db.collection("cms/studyguide/toc");
+  // componentDidMount() {
+  //   const docRef =  db.collection("cms/studyguide/toc");
  
-     docRef.get().then((querySnapshot) => {
-       querySnapshot.forEach((doc) => {
-        // console.log(doc);
-       this.state.questions.push(doc.id)
-      })
-    })
-    // console.log(this.state.questions)
-  }
+  //    docRef.get().then((querySnapshot) => {
+  //      querySnapshot.forEach((doc) => {
+  //       // console.log(doc);
+  //      this.state.questions.push(doc.id)
+  //     })
+  //   })
+  //   // console.log(this.state.questions)
+  // }
 
   render() {
     let { questions } = this.state;

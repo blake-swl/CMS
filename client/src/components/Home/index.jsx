@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import "./home.scss";
-import db from '../../../../db/index';
+// import db from '../../../../db/index';
 
 
 let data = [
@@ -28,10 +28,13 @@ export default class Home extends Component {
 
     this.state = {
       questions: [],
-      title: '',
+      title: [],
       subtitle: '',
       date_posted: ''
     }
+  }
+  componentDidMount() {
+    this.setState({title: data.title, subtitle: data.subtitle, date_posted: data.date});
   }
   // async UNSAFE_componentWillMount() {
   //   let { questions } = this.state;
@@ -62,7 +65,8 @@ export default class Home extends Component {
   // }
 
   render() {
-    let { questions } = this.state;
+
+    let { title, subtitle, date_posted } = this.state;
 
     return(
       <div id="page-wrap" className="home">
@@ -77,7 +81,9 @@ export default class Home extends Component {
         </div>
         <div className="home-right">
           <div>
-            <h1>{this.state.title}</h1>
+            <div>{title.map(titles => {
+              <li>{titles}</li>
+              })}</div>
             <h3>{this.state.subtitle}</h3>
             
             {/* {questions.map((question) => 
